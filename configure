@@ -1,0 +1,10 @@
+pd=`command -v pdftk`
+
+if [[ ! -f $pd ]]; then
+        echo ''
+    echo "pdftk missing. Please install from https://www.pdflabs.com/tools/pdftk-server/."
+    echo "If using macOS High Sierra, to prevent pdtfk from hanging indefinetely, install from"
+    echo "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg"
+    echo ''
+    exit 1;
+fi
